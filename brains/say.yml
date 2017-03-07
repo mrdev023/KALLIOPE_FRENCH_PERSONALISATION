@@ -1,0 +1,46 @@
+---
+  - name: "say-hello-fr"
+    signals:
+      - order: "Bonjour"
+    neurons:
+      - say:
+          message:
+            - "Bonjour monsieur"
+
+  - name: "open-software-fr"
+    signals:
+      - order: "ouvre moi {{ application }}"
+      - order: "ouvre-moi {{ application }}"
+      - order: "ouvrir {{ application }}"
+      - order: "ouvre {{ application }}"
+      - order: "ouvres {{ application }}"
+    neurons:
+      - say:
+          message:
+            - "Le logiciel est ouvert"
+      - run: 
+          args: 
+            - application
+          async: True
+
+  - name: "open-google-fr"
+    signals:
+      - order: "google"
+    neurons:
+      - say:
+          message:
+            - "Google est ouvert"
+      - shell:
+          cmd: "firefox http://www.google.fr/&"
+          async: True
+
+  - name: "open-facebook-fr"
+    signals:
+      - order: "facebook"
+    neurons:
+      - say:
+          message:
+            - "Facebook est ouvert"
+      - shell:
+          cmd: "firefox http://fr-fr.facebook.com/&"
+          async: True
