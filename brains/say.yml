@@ -44,3 +44,4 @@
       - shell:
           cmd: "firefox http://fr-fr.facebook.com/&"
           async: True
+
