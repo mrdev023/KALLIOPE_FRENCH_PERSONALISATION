@@ -10,6 +10,20 @@ Too fix it, you can use script in bellow
 sudo ./fix_snowboy_bin.sh
 ```
 
+# pico2wave
+
+```bash
+sudo pamac install svox-pico-bin
+```
+
+# Arch linux
+
+You must use pyenv because pyaudio crash with python3.10
+
+```bash
+pacman -S pyenv
+```
+
 # kalliope starter config fr
 
 This is an out of the box working configuration for french kalliope user.
