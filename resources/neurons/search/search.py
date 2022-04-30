@@ -10,9 +10,7 @@ class Search(NeuronModule):
         self.query = kwargs.get('search', None)
 
         if self._is_parameters_ok():
-            command = "xdg-open \"https://www.google.fr/search?q="+self.query+"&ie=utf-8&oe=utf-8\""
-            p = subprocess.Popen(command, shell=True)
-            self.say("Youpiiiii")
+            subprocess.Popen("xdg-open \"https://www.google.fr/search?q="+self.query+"&ie=utf-8&oe=utf-8\"", shell=True)
     
     def _is_parameters_ok(self):
         """

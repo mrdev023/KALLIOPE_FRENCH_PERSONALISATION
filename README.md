@@ -34,3 +34,7 @@ git clone https://github.com/kalliope-project/kalliope_starter_fr.git
 cd kalliope_starter_fr
 kalliope start
 ```
+
+# Create custom awake term with 
+
+https://github.com/rhasspy/snowboy-seasalt
