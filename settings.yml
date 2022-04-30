@@ -48,7 +48,7 @@ speech_to_text:
       client_id: "fakeclientid" # example : "lN4JXeaSticbSo9-llczbA=="
   - vosk:
       log-level: -1
-      language: "resources/stt/vosk/model-fr"
+      language: "resources/stt/vosk/model-fr-full"
   #- cmusphinx
 
 # ---------------------------
