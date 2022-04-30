@@ -6,6 +6,7 @@
         - brains/neurotransmitter.yml
         - brains/kill.yml
         - brains/search.yml
+        - brains/run.yml
 
   - name: "order-not-found-synapse"
     signals: []

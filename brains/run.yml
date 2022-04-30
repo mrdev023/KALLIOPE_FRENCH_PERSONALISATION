@@ -1,0 +1,9 @@
+- name: "run-app-fr"
+  signals:
+    - order: "lance {{ app }}"
+    - order: "ouvre {{ app }}"
+  neurons:
+    - run_app:
+        app: "{{ app }}"
+        found_message: "Lancement de l'application {{ app }}"
+        not_found_message: "Impossible de trouver l'application {{ app }}"
