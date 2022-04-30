@@ -1,0 +1,7 @@
+- name: "stop-kalliope"
+  signals:
+    - order: "stop"
+  neurons:
+    - say:
+        message: "Au revoir"
+    - kill_switch

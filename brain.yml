@@ -4,6 +4,8 @@
         - brains/say.yml
         - brains/systemdate.yml
         - brains/neurotransmitter.yml
+        - brains/kill.yml
+        - brains/search.yml
 
   - name: "order-not-found-synapse"
     signals: []
@@ -32,6 +34,6 @@
     signals: []
     neurons:
       - say:
-          message: "je suis prête"
+          message: "je suis prêt"
 
 

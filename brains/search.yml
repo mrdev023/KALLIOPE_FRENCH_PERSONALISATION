@@ -1,0 +1,9 @@
+- name: "search-fr"
+  signals:
+    - order: "recherche {{ search }}"
+  neurons:
+    - say:
+        message:
+          - "Recherche effectuée"
+    - search:
+        search: "{{search}}"
