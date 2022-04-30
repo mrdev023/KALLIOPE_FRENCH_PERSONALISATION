@@ -6,4 +6,4 @@
         message:
           - "Recherche effectuée"
     - search:
-        search: "{{search}}"
+        search: "{{ search }}"
