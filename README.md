@@ -6,6 +6,10 @@ This starter kit has been tested with the version v0.5.0 of Kalliope.
 If you have error with _snowboydetect kalliope can not import _snowboydetect.so with you current version of python.
 Too fix it, you can use script in bellow
 
+NOTE: https://hub.docker.com/r/kalliope/kalliope_ubuntu
+NOTE: https://hub.docker.com/r/alphacep/kaldi-fr
+
+
 ```bash
 sudo ./fix_snowboy_bin.sh
 ```

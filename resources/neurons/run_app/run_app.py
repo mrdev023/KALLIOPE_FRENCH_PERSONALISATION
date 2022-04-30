@@ -1,8 +1,12 @@
 import subprocess
 import os
+import logging
 
 from kalliope.core import NeuronModule
 from kalliope.core.NeuronModule import MissingParameterException, MissingParameterException
+
+logging.basicConfig()
+logger = logging.getLogger("kalliope")
 
 home_dir = os.path.expanduser('~')
 
@@ -28,7 +32,7 @@ def check_file(file_path, query):
         if query.lower() in line.lower():
             found = True
         if exec is not None and found is True:
-            return exec
+            return exec.split(" ")[0]
     return None
 
 def search_app_name_in_desktop_entries(query: str):
@@ -52,6 +56,7 @@ class Run_app(NeuronModule):
         if self._is_parameters_ok():
             result = search_app_name_in_desktop_entries(self.query)
             if result is not None:
+                logger.debug("EXEC: %s" % result)
                 subprocess.Popen(result, shell=True)
                 self.say(self.found_message)
             else:
