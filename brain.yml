@@ -4,12 +4,12 @@
         - brains/say.yml
         - brains/systemdate.yml
         - brains/neurotransmitter.yml
-        - brains/recherche.yml
         - brains/kill.yml
+        - brains/search.yml
+        - brains/run.yml
 
-  - name: "default-synapse"
-    signals:
-      - order: "default-synapse"
+  - name: "order-not-found-synapse"
+    signals: []
     neurons:
       - say:
           message:
@@ -18,5 +18,23 @@
             - "Veuillez renouveller votre ordre"
             - "Veuillez reformuller s'il vous plait"
             - "Je n'ai pas saisi cet ordre"
+
+  - name: "on-triggered-synapse"
+    signals: []
+    neurons:
+      - say:
+          message:
+            - "Oui monsieur?"
+            - "Je vous écoute"
+            - "Monsieur?"
+            - "Que puis-je faire pour vous?"
+            - "J'écoute"
+            - "Oui?"
+
+  - name: "on-start-synapse"
+    signals: []
+    neurons:
+      - say:
+          message: "je suis prêt"
 
 

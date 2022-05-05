@@ -1,1 +1,0 @@
-pocketsphinx_continuous -hmm /usr/local/lib/python2.7/dist-packages/pocketsphinx/model/fr -lm /usr/local/lib/python2.7/dist-packages/pocketsphinx/model/fr.lm.bin -dict /usr/local/lib/python2.7/dist-packages/pocketsphinx/model/fr.dict -infile test.wav -samprate 48000 -nfft 2048
